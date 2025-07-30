@@ -13,6 +13,18 @@
         Your browser does not support the audio element.
     </audio>
 
+    <script>
+    // Try to autoplay after user clicks anywhere
+    document.addEventListener('DOMContentLoaded', () => {
+        document.body.addEventListener('click', () => {
+            const audio = document.getElementById('bg-audio');
+            if (audio.paused) {
+                audio.play().catch(e => console.log("Autoplay failed:", e));
+            }
+        }, { once: true });
+    });
+</script>
+
     <div class="container">
         <h1>Will You Go On A Date With Me My Love?</h1>
         <div class="buttons">
