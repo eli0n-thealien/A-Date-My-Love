@@ -1,6 +1,6 @@
 (async function checkForUpdates() {
     const currentVersion = "1.1";
-    const versionUrl = "https://raw.githubusercontent.com/eli0n-thealien/A-Date-My-Love/refs/heads/main/version.json"; 
+    const versionUrl = "https://raw.githubusercontent.com/eli0n-thealien/Please-Kiss-Me/refs/heads/main/version.json"; 
 
     try {
         const response = await fetch(versionUrl);
